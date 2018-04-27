@@ -61,7 +61,7 @@ public class Chiamate {
     public ArrayList<Chiamata> getChiamateDipendente(int codiceDipendente){
         ArrayList<Chiamata> chiamate;
         chiamate = new ArrayList<Chiamata>();
-        for(Chiamata chiamata:chiamate)
+        for(Chiamata chiamata:this.chiamate)
             if(chiamata.codiceDipendente == codiceDipendente)
                 chiamate.add(chiamata);
         return chiamate;
