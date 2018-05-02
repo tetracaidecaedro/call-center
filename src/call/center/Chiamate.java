@@ -41,29 +41,29 @@ public class Chiamate {
     }
     
     public ArrayList<Chiamata> getChiamateCliente_Dipendente(int codiceCliente, int codiceDipendente){
-        ArrayList<Chiamata> chiamate;
-        chiamate = new ArrayList<Chiamata>();
+        ArrayList<Chiamata> ch;
+        ch = new ArrayList<Chiamata>();
         for(Chiamata chiamata:this.chiamate)
             if(chiamata.codiceCliente == codiceCliente && chiamata.codiceDipendente == codiceDipendente)
-                chiamate.add(chiamata);
-        return chiamate;
+                ch.add(chiamata);
+        return ch;
     }
     
     public ArrayList<Chiamata> getChiamateCliente(int codiceCliente){
-        ArrayList<Chiamata> chiamate;
-        chiamate = new ArrayList<Chiamata>();
+        ArrayList<Chiamata> ch;
+        ch = new ArrayList<Chiamata>();
         for(Chiamata chiamata:this.chiamate)
             if(chiamata.codiceCliente == codiceCliente)
-                chiamate.add(chiamata);
-        return chiamate;
+                ch.add(chiamata);
+        return ch;
     }
     
     public ArrayList<Chiamata> getChiamateDipendente(int codiceDipendente){
-        ArrayList<Chiamata> chiamate;
-        chiamate = new ArrayList<Chiamata>();
+        ArrayList<Chiamata> ch;
+        ch = new ArrayList<Chiamata>();
         for(Chiamata chiamata:this.chiamate)
             if(chiamata.codiceDipendente == codiceDipendente)
-                chiamate.add(chiamata);
-        return chiamate;
+                ch.add(chiamata);
+        return ch;
     }
 }
