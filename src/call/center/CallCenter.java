@@ -28,11 +28,14 @@ public class CallCenter {
         clienti.add(cliente, 32848);
         dipendenti.add(new Dipendente("Dipendente1"), 64846);
         dipendenti.add(new Dipendente("Dipendente2"), 64847);
+        dipendenti.add(new Dipendente("Dipendente3"), 64846);
+        chiamate.addChiamata(32848, 64846);
         chiamate.addChiamata(32848, 64846);
         chiamate.addChiamata(32848, 64847);
         
         try{
         stampa(chiamate.getChiamateCliente(32848));
+        stampa(chiamate.getChiamateDipendente(64846));
         }catch(Exception e){
             System.out.println("errore");
             System.out.println(e.toString());
