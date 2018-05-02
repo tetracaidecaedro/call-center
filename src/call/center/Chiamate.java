@@ -40,6 +40,15 @@ public class Chiamate {
         throw new Exception("chiamata non trovata");
     }
     
+    public ArrayList<Chiamata> getChiamate_Data(GregorianCalendar gc){
+        ArrayList<Chiamata> ch;
+        ch = new ArrayList<Chiamata>();
+        for(Chiamata chiamata:this.chiamate)
+            if(chiamata.gc == gc)
+                ch.add(chiamata);
+        return ch;
+    }
+    
     public ArrayList<Chiamata> getChiamateCliente_Dipendente(int codiceCliente, int codiceDipendente){
         ArrayList<Chiamata> ch;
         ch = new ArrayList<Chiamata>();
