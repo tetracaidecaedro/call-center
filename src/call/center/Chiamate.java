@@ -6,6 +6,7 @@
 package call.center;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 /**
@@ -44,7 +45,7 @@ public class Chiamate {
         ArrayList<Chiamata> ch;
         ch = new ArrayList<Chiamata>();
         for(Chiamata chiamata:this.chiamate)
-            if(chiamata.gc == gc)
+            if(chiamata.gc.get(GregorianCalendar.DAY_OF_MONTH) == gc.get(GregorianCalendar.DAY_OF_MONTH) && chiamata.gc.get(GregorianCalendar.MONTH) == (gc.get(GregorianCalendar.MONTH)-1) && chiamata.gc.get(GregorianCalendar.YEAR) == gc.get(GregorianCalendar.YEAR))
                 ch.add(chiamata);
         return ch;
     }

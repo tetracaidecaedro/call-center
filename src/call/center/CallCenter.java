@@ -6,6 +6,7 @@
 package call.center;
 
 import java.util.ArrayList;
+import java.util.GregorianCalendar;
 
 /**
  *
@@ -34,6 +35,7 @@ public class CallCenter {
         chiamate.addChiamata(32848, 64847);
         
         try{
+        stampa(chiamate.getChiamate_Data(new GregorianCalendar(2018,5,2)));
         stampa(chiamate.getChiamateCliente(32848));
         stampa(chiamate.getChiamateDipendente(64846));
         }catch(Exception e){
