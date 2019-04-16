@@ -49,7 +49,7 @@ public class CallCenter {
     private static void stampa(ArrayList<Chiamata> chiamate) throws Exception{
         System.out.println("---------------------");
         for(Chiamata chiamata:chiamate){
-            System.out.println("nome cliente: " + clienti.search(chiamata.codiceCliente).nome+ "; nome dipendente:" + dipendenti.search(chiamata.codiceDipendente).nome+"; codice cliente:" + chiamata.codiceCliente + "; codice dipendente:" + chiamata.codiceDipendente+"; indirizzo cliente:"+ clienti.search(chiamata.codiceCliente).indirizzo );
+            System.out.println("minacce rilevate");
         }
     }
     
